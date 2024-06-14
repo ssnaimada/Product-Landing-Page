@@ -1,0 +1,291 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#layar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Add this to make the absolute positioning work within each section */
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+//*---------------BUTTON------------------------------------------*//
+.buttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    gap: 5px;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/*---------------BORDER PROMO---------------------------------------*/
+.lineimage {
+	border: 2px solid #000;
+    border-radius: 10px;
+    border-color: #40A089;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    flex-direction: column;
+    width: auto; 
+    height: auto;
+}
+/*-----------------MOVING TEXT-----------------------------------*/ 
+@keyframes shine {
+    0% {
+        background-position: -500px;
+    }
+    100% {
+        background-position: 500px;
+    }
+}
+.shine {
+	animation-name: shine;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    background: linear-gradient(90deg, rgba(64, 160, 137, 1), rgba(64, 160, 137, 0.02), rgba(64, 160, 137, 1));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s linear infinite;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#c-cont {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #70D3BC;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background:  #40A089;
+    display: inline-block;
+}
+
+.text {
+    padding-top: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.text2 {
+    padding-top: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #9A2164;
+    font-size: 18px;
+    text-align: center;
+}
+
+#text3 {
+ margin-top: 20px;
+ text-align: center;
+ font-family: sans-serif;
+ font-size: 14px;
+ margin-bottom: 0;
+ width: 100%; 
+}
+
+.textgreen {
+    color: #156653;
+}
+.textred {
+    color: #FF0101;
+}
+/*-------------------FORM CSS--------------------------------------*/
+.kotak {
+    border: 2px solid #228068;
+    background-color: #90B8AE;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    display: grid;
+    place-items: center;
+}
+
+.kotakd { 
+    background-color: #FFE96D;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(231, 143, 238, 0.5);
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder {
+    color: #888; /* Warna placeholder */
+    font-style: italic; /* Gaya placeholder */
+}
+
+button {
+    padding: 10px;
+    background-color: #6BC969;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #26A724;
+}
+
+#note {
+    font-family: sans-serif;
+    font-size: 7px;
+    margin: 0;
+}
+.notee {
+    font-weight: bold;
+    color: white;
+}
+.rednote {
+    color: #FFFC00;
+}
+
+/*--------------------------------------------------------------*/
+.section2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    margin-top: 20px;
+}
+
+.responsive-image2 {
+    width: 100%;
+    height: auto;
+}
+
+#wa {
+ margin-top: 20px;
+ text-align: center;
+ font-family: sans-serif;
+ font-size: 14px;
+ background-color: #ED73A9;
+ margin-bottom: 0;
+ color: ghostwhite;
+ width: 100%; 
+}
+
+/*-------------------------------------------------------------*/
+.wabutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttonwa {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #25D366;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    gap: 5px;
+    align-items: center;
+}
+
+.buttonwa:hover {
+    background-color: #066526;
+}
+
+.buttonwa i {
+  font-size: 18px;
+}
+
+/*-------------------------------------------------------------*/
